@@ -5,5 +5,19 @@ import data from './data/got/got.js';
 
 console.log(got, data, got.js);
 
+let fullName = ("fullName")
+fullName.sort ((a,b) => {
+    if (a == b) {
+        return 0;
+    }
+    if(a > b){
+        return -1;
+    }
+    return 1;
+}
+)
+console.log(fullName);
+
+
 //import { lastName } from './data/got/got.js';
 //console.log( lastName )
