@@ -1,9 +1,11 @@
-//import { filterData, sortData, computeStatus, filterCasas, filterEstatus, searchNombre } from './data.js';
-
-import got from './data/got/got.js'; //Se importa TODA la data de got.js//
+import { filterData, sortData, computeStatus, filterCasas, filterEstatus, searchNombre } from './data.js';
+// import data from './data/got/got.js';
 import data from './data/got/got.js';
+//const seleccionar= document.getElementById("ordenalfabetico");
 
-console.log(got, data, got.js);
+const seleccionar= document.getElementById("ordenalfabetico");
+export const got = [data.personajes]
+console.log(example, data);
 
 //import { lastName } from './data/got/got.js';
 //console.log( lastName )

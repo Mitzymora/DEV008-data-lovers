@@ -2,13 +2,13 @@
 
 /*export const sortData = () => {
   const filterData="hola"
-  if (...==="abc"){
+  if (==="abc"){
     filterData.sort((a, b)=>(a.name> b.name)? 1 : -1);
-  }else if(...==="cba"){
+  }else if(==="cba"){
     filterData.sort((a, b)=> (a.name < b.name)? 1 : -1);
   }
   return filterData;
-};*/ 
+};*/
 
   //export function filterData(){
 
