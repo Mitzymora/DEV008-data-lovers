@@ -1,14 +1,31 @@
 // estas funciones son de ejemplo
+export const sortData = (fullName)
+fullName.sort ((a,b) => {
+    if (a == b) {
+        return 0;
+    }
+    if(a > b){
+        return -1;
+    }
+    return 1;
+}
+)
+console.log(fullName);
 
-/*export const sortData = () => {
-  const filterData="hola"
-  if (==="abc"){
-    filterData.sort((a, b)=>(a.name> b.name)? 1 : -1);
-  }else if(==="cba"){
-    filterData.sort((a, b)=> (a.name < b.name)? 1 : -1);
-  }
-  return filterData;
-};*/
+export const sortData = (fullName) => {
+  let ordenar= fullName.sort((a,b) =>
+  {
+    if (a.fullName > b.fullName) {
+    return 1;
+  } else 
+  {
+  return -1;
+} 
+});
+return ordenar;
+};
+
+console.log()
 
   //export function filterData(){
 
