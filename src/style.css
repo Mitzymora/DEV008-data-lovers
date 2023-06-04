@@ -9,9 +9,7 @@ header{
     background-image: url();
     text-align: center;
     color:aliceblue;
-    font-family: 'Slabo 27px', serif;
     font-size: 30px;
-   
 }
 
 nav{
@@ -22,19 +20,16 @@ nav{
 select{
     font-size: 18px;
     border-radius: 8px;
-    font-family: 'Slabo 27px', serif;
 }
 
 input{
     font-size: 18px;
     border-radius: 8px;
-    font-family: 'Slabo 27px', serif;
 }
 
 button{
 
     border: 0;
-    font-family: 'Slabo 27px', serif;
     background-image: linear-gradient(
         150deg,
         #be6161,
@@ -75,7 +70,19 @@ section{
 	text-align: justify;
 	width: 20%;
     background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
-    font-family: 'Slabo 27px', serif;
+
 }
 
+
+.card{
+    color: aliceblue;
+    align-items: center;
+    float: left;
+    padding: 25px;
+	text-align:right;
+    width:200px;
+    height: 400px;
+    background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
+    font-size: 16px;
+}
 

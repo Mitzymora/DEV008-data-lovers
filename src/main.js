@@ -1,29 +1,34 @@
-//importación funciones data
-//import { filterData, sortData, computeStatus, filterCasas, filterEstatus, searchNombre } from './data.js';
+//importación data
+import data from "./data/got/got.js";
+//import { filterData, sortData} from "./data.js";
 
-//Se agrega TODA la data de base de datos
-import data from './data/got/got.js';
 //console.log(data);
 //const trono = (data);
 
 //funcion muestra de tarjetas
-function gotCardsCreator(data){ 
-    document.getElementById("gotCards").innerHTML=data.map((item)=>
-    
-        <div class="container">
-                <div class="card">
-                    <div><img class="got-image.url" src="${item.img}"
-                        alt="Imagen GOT"></img>
+const GOTcontainer = document.getElementById("gotImg");
+
+function gotImgCreator(gotImages) { 
+    GOTcontainer.innerHTML="";
+
+    for (const got of gotImages ) {
+        const imagen = document.createElement("div");
+        imagen.setAttribute("id", "fullName");
+        imagen.setAttribute("class", "family");
+        imagen.innerHTML=
+        ` <div class="card">
+                    <div><h2 class="nombrePersonaje" id="nombrecompleto" >${got.fullName}</h3>
+                    <img class="got-image.url" src=${got.imageUrl}
+                        alt="Imagen GOT" width=150 height=150 ></img>
+                    <p id="familia">${got.family}</p>
+                    <p id="titulo">${got.title}</p>
+                    <p id="nacimiento">${got.born} - ${got.death}</p>
                     </div>
-                    <div class="GOT-fullName">${item.fullName}
-                    </div>
-                </div>
-        </div>
-        
-    )
-    .join("");
+            </div>`
+    GOTcontainer.append(imagen);
 }
-return gotCardsCreator(data.got);
+}
+gotImgCreator(data.got);
 
 
 
@@ -36,23 +41,16 @@ return gotCardsCreator(data.got);
 //console.log.filtrado;
 
 
-
-//import trono from './data/got/got.js';
-//console.log(trono);
-
-
-
 //hacer constantes de los contenedores de busqueda 
-//const filtroabc = document.getElementById("ordenalfabetico")
-//const filtrocasa= document.getElementById("filtro-casas")
-//const filtrovivomuerto= document.getElementById("Estado")
+const filtroabc = document.getElementById("ordenalfabetico")
+const filtrocasa= document.getElementById("filtro-casas")
+const filtrovivomuerto= document.getElementById("Estado")
 
 
 //const sortData = document.getElementById("ordenalfabetico").addEventListener()
 
 //Prueba de JS//
 
-//const lastName = lastName;
 
 
 //import { lastName } from './data/got/got.js';
