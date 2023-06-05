@@ -1,4 +1,5 @@
 //importación data
+import { filterData } from "./data.js";
 import data from "./data/got/got.js";
 //import { filterData, sortData} from "./data.js";
 
@@ -17,7 +18,7 @@ function gotImgCreator(gotImages) {
         imagen.setAttribute("class", "family");
         imagen.innerHTML=
         ` <div class="card">
-                    <div><h2 class="nombrePersonaje" id="nombrecompleto" >${got.fullName}</h3>
+                    <div><h2 class="nombrePersonaje" id="nombrecompleto" >${got.fullName}</h2>
                     <img class="got-image.url" src=${got.imageUrl}
                         alt="Imagen GOT" width=150 height=150 ></img>
                     <p id="familia">${got.family}</p>
@@ -30,6 +31,12 @@ function gotImgCreator(gotImages) {
 }
 gotImgCreator(data.got);
 
+
+
+const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
+//console.log(filterData);
+
+    //console.log(this.value);
 
 
 
