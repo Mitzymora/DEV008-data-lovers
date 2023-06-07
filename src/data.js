@@ -1,34 +1,17 @@
 
 
-// estas funciones son de ejemplo
-//función para orden a-z y viceversa
-export function sortData(order, data) {
-  console.log(data)
-  let ordenalfabetico;  
-  if (order === "abc") {ordenalfabetico = data.got.sort((a, b) => {
-    if (a.fullName < b.fullName) {
-      return -1;
-    }
-    if(a.fullName > b.fullName){
-      return 1;
-    }
-    return 0;
-  });
-} else if(order === "cba") {
-  ordenalfabetico = data.got.sort((a, b)=> {
-    if (a.fullName> b.fullName){
-      return -1;
-    }
-    if (a.fullName < b.fullName){
-      return 1;
-    }
-    return 0;
-  });
-}
-console.log(ordenalfabetico);
-return ordenalfabetico;
-}
+import got from "./data/got/got";
 
+// estas funciones son de ejemplo
+//export const sortData = (fullName)
+
+export function filterData () {
+const searchNombre= got.filter ( data => `${got.firstName.toLowersCase()} ${got.lastName.toLowersCase()}`.includes(main.busqueda.value.toLowersCase));
+
+ //gotImgCreator(gotImages)  
+ //console.log(filterData)
+} 
+  
 
 
 

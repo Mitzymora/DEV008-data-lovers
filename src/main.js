@@ -1,5 +1,5 @@
 //importación data
-import { sortData } from "./data.js";
+import { filterData } from "./data.js";
 import data from "./data/got/got.js";
 //import { filterData, sortData} from "./data.js";
 
@@ -34,9 +34,13 @@ function gotImgCreator(gotImages) {
 gotImgCreator(data.got);
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    gotImgCreator(data.got);
-});
+
+const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
+//console.log(filterData);
+
+    //console.log(this.value);
+
+
 
 //const filtrado = lastName.filterCasas(function(lastName){
 //return lastName > 0
