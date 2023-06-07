@@ -1,12 +1,12 @@
 //importación data
-import { filterData } from "./data.js";
+import { filterName } from "./data.js";
 import data from "./data/got/got.js";
 //import { filterData, sortData} from "./data.js";
 
 //console.log(data);
 //const trono = (data);
 
-//funcion muestra de tarjetas 
+//funcion muestra de tarjetas
 const GOTcontainer = document.getElementById("gotImg");
 
 function gotImgCreator(gotImages) { 
@@ -17,8 +17,8 @@ function gotImgCreator(gotImages) {
         imagen.setAttribute("id", "fullName");
         imagen.setAttribute("class", "family");
         imagen.innerHTML=
-        ` <div class="card ">
-                    <div><h2 class="nombrePersonaje" id="nombrecompleto" >${got.fullName}</h3>
+        ` <div class="card">
+                    <div><h2 class="nombrePersonaje" id="nombrecompleto" >${got.fullName}</h2>
                     <img class="got-image.url" src=${got.imageUrl}
                         alt="Imagen GOT" width=150 height=150 ></img>
                     <p id="familia">${got.family}</p>
@@ -28,18 +28,22 @@ function gotImgCreator(gotImages) {
             </div>`
     GOTcontainer.append(imagen);
 }
-    
-    
 }
 gotImgCreator(data.got);
 
 
 
-const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
-//console.log(filterData);
+/*const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
+console.log(filterData); */
 
-    //console.log(this.value);
+document.getElementById("buscador").addEventListener('keyup', () => {
+    filterName ();
+    console.log("aquí va el filtrado");
+})
+    
 
+//console.log(busqueda)
+//console.log(this.value);
 
 
 //const filtrado = lastName.filterCasas(function(lastName){
@@ -51,24 +55,12 @@ const busqueda = document.getElementById("buscador").addEventListener('keyup', e
 
 
 //hacer constantes de los contenedores de busqueda 
+const filtroabc = document.getElementById("ordenalfabetico")
 const filtrocasa= document.getElementById("filtro-casas")
 const filtrovivomuerto= document.getElementById("Estado")
 
 
-const ordenarselect = document.getElementById("ordenabc");
-ordenarselect.addEventListener("change",() => {
-    const ordenName = ordenarselect.value;
-    let ordenalfabetico;
-
-    if (ordenName === "abc"){
-        ordenalfabetico = sortData("abc", data);
-    }   else if (ordenName === "cba"){
-        ordenalfabetico =sortData("cba", data)
-    }  
-    document.getElementById("gotImg").innerHTML= "";
-
-    gotImgCreator(ordenalfabetico);
-});
+//const sortData = document.getElementById("ordenalfabetico").addEventListener()
 
 //Prueba de JS//
 
