@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1><img src="header/titulo.png"></h1>
+    <header class="active">
+      <img src="header/titulo.png" style="max-width:100%;height:180px;"></h1>
     </header>
     <nav>
     <!--menu de navegación/filtros-->
-    <select class="orden" id="ordenalfabetico">
-      <option disabled selected>orden alfabetico</option>
-      <option value="abc"> A-Z</option>
-      <option value="cba">Z-A</option>
-    </select>
+    <div class="selec-abc" id="order"></div>
+      <select class="orden" id="ordenabc">
+        <option disabled selected>orden alfabetico</option>
+        <option value="abc"> A-Z</option>
+        <option value="cba">Z-A</option>
+      </select>
+    </div>
     <select class= "casa" id="filtro-casas">
       <option disabled selected>Casas</option>
       <option value="todas">Todas</option>
@@ -30,6 +32,7 @@
       <option value="Lannister">Lannister</option>
       <!--prueba de que si podremos-->
     </select>
+
 
     <select class ="vivomuerto" id="Estado">
       <option value="">Estatus</option>
@@ -44,6 +47,7 @@
 
     <br>
     <br>
+    
     <section>
     <article>
     <details >

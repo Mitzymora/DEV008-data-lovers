@@ -3,16 +3,22 @@ body{
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
+    align-items: center;
 }
 
 header{
-    background-image: url();
-    background-size: 600px;
+    background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
+    background-size: 100px;
     background-position: center top;
     text-align: center;
     color:rgb(135, 143, 150);
-    font-size: 80px;
+    font-size: 50px;
+    position: sticky;
+    top:10 ;
+    border-radius: 55px;
 }
+
+
 
 nav{
     border-radius: 8px;
@@ -78,14 +84,18 @@ section{
 
 .card{
     color: aliceblue;
-    align-items: center;
     float: left;
     padding: 25px;
-	text-align:right;
+	-ms-flex-item-align:center;
     width:200px;
     height: 400px;
     background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
     border-radius: 15px;
     font-size: 16px;
+    margin: 16px;
+}
+.card:hover,
+section:active{
+    background: rgb(41, 29, 29);
 }
 
