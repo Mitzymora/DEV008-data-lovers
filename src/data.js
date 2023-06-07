@@ -1,15 +1,44 @@
 //import data from "./data/got/got.js";
 
+import got from "./data/got/got";
+
 // estas funciones son de ejemplo
 //export const sortData = (fullName)
 
-export function filterData () {
+/*export function filterData () {
 const searchNombre= got.filter ( data => `${got.firstName.toLowersCase()} ${got.lastName.toLowersCase()}`.includes(main.busqueda.value.toLowersCase));
+console.log(filterData)
+console.log(searchNombre)
+gotImgCreator(gotImages)  
 
- //gotImgCreator(gotImages)  
- //console.log(filterData)
-} 
+} */
+
+
+
+
+
   
+  /*var input, filter, firstName, lastName;
+  input = document.getElementById("buscador");
+  filter = input.value.toUpperCase();
+  firstName = document.getElementById("firtName");
+  lastName = section.getElementByTagName("lastName");
+  h1 =lastName.getElementsByClassName("lastName")
+
+
+  for (i = 0; i<div.length; i++){
+    h1 = h1[i].getElementById("filtro-casas")[0];
+    textValue = x.textValue || x.innerHTML;
+
+    if (textValue.toUpperCase().indexOf(filter) > -1) {
+      h1[i].style.diplay= "";
+    }else{
+      h1[i].style.diplay = "none";
+    }
+  }
+} */
+
+
 
 
   //export function filterData(){

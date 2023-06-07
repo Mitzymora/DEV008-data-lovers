@@ -85,7 +85,7 @@ section{
     width:200px;
     height: 400px;
     background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 16px;
 }
 

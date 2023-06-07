@@ -1,5 +1,5 @@
 //importación data
-import { filterData } from "./data.js";
+import { filterName } from "./data.js";
 import data from "./data/got/got.js";
 //import { filterData, sortData} from "./data.js";
 
@@ -33,11 +33,17 @@ gotImgCreator(data.got);
 
 
 
-const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
-//console.log(filterData);
+/*const busqueda = document.getElementById("buscador").addEventListener('keyup', e => filterData);
+console.log(filterData); */
 
-    //console.log(this.value);
+document.getElementById("buscador").addEventListener('keyup', () => {
+    filterName ();
+    console.log("aquí va el filtrado");
+})
+    
 
+//console.log(busqueda)
+//console.log(this.value);
 
 
 //const filtrado = lastName.filterCasas(function(lastName){
