@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Game of Thrones</title>
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
@@ -11,17 +11,25 @@
   </head>
   <body>
     <header class="active">
-      <img src="header/titulo.png" style="max-width:100%;height:180px;"></h1>
+      <img src="header/titulo.png" style="max-width:100%;height:180px;">
     </header>
+    <br>
+    
     <nav>
-    <!--menu de navegación/filtros-->
-    <div class="selec-abc" id="order"></div>
+
+      <input type="search" id="buscador" placeholder="Apellido">
+    <button id="busqueda">
+      <span>Buscar</span></button>
+      <br>
+      <br>
+    <div class="selec-abc" id="order">
       <select class="orden" id="ordenabc">
         <option disabled selected>orden alfabetico</option>
         <option value="abc"> A-Z</option>
         <option value="cba">Z-A</option>
       </select>
     </div>
+    <br>
     <select class= "casa" id="filtro-casas">
       <option disabled selected>Casas</option>
       <option value="todas">Todas</option>
@@ -30,25 +38,13 @@
       <option value="Tarly">Tarly</option> 
       <option value="Baratheon">Baratheon</option> 
       <option value="Lannister">Lannister</option>
-      <!--prueba de que si podremos-->
     </select>
-
-
-    <select class ="vivomuerto" id="Estado">
-      <option value="">Estatus</option>
-      <option value="">Vivo</option>
-      <option value="">Muerto</option>
-    </select>
-    <input type=search id="buscador" placeholder="Nombre, Apellido, Apodo">
-    <button id="buscador">
-      <span>Buscar</span></button>
   </nav>
-      <!--prueba de arti-->
 
     <br>
     <br>
     
-    <section>
+    <section class="Detalles" >
     <article>
     <details >
       <p>En un mundo fantástico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.
@@ -69,8 +65,17 @@
 
       <div class="container"  id="gotImg" ></div>
 
-
-  
+    <!--  <section class="modal">
+        <div class="modal_container">
+          <img src="Images/wp6808094.png" class="modal_img">
+          <h2 class="modal_title">!Bienvenido al Juego de Tronos¡</h2>
+          <p class="modal_paragraph">"Cuando cae la nieve y los vientos blancos soplan, el lobo solitario muere, pero la manada sobrevive".
+            Ned Stark</p>
+          <a href="#" class="modal_close">Cerrar Modal</a>
+        </div> 
+      </section> -->
+      
+      
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
